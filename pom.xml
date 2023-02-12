@@ -38,6 +38,32 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>javax.persistence</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.lazydog.repository</groupId>
+            <artifactId>repository-api</artifactId>
+            <version>1.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.lazydog.repository</groupId>
+            <artifactId>repository-jpa-impl</artifactId>
+            <version>1.12</version>
+        </dependency>
+        <dependency>
+            <groupId>io.gravitee.repository</groupId>
+            <artifactId>gravitee-repository-jpa</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+		<dependency>
+			<groupId>org.lazydog.repository</groupId>
+			<artifactId>repository-jpa-impl</artifactId>
+			<version>1.12</version>
+			<scope>import</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
