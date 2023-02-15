@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping ("/configuracao")
 public class ConfiguracaoController {
 
-    @Autowired
-    private ConfiguracaoRepository configuracaoRepository;
+   /* @Autowired
+    private ConfiguracaoRepository configuracaoRepository;*/
 
 }
