@@ -19,7 +19,7 @@ import java.util.UUID;
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id_usuario", updatable = false, unique = true, nullable = false)
+    @Column(name = "id_usuario", updatable = false, nullable = false)
     private UUID id;
     @Column(name = "nome", nullable = false)
     private String nome;
