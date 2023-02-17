@@ -21,9 +21,11 @@ public class SwaggerConfig {
     public Docket docket(){
         return  new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.any())
+                .apis(RequestHandlerSelectors.basePackage("io.github.mapatrading.conta.controller"))
                 .paths(PathSelectors.any())
-                .build();
+                .build()
+                .apiInfo(apiInfo());
+
     }
 
     private ApiInfo apiInfo(){
