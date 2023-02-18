@@ -1,6 +1,7 @@
 package io.github.mapatrading.conta.entity;
 
 import com.fasterxml.jackson.databind.JsonDeserializer;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import javax.persistence.CascadeType;
@@ -25,6 +26,7 @@ public class Usuario  {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id_usuario", updatable = false, nullable = false)
+    @ApiModelProperty(value = "Id do usuario", hidden = true)
     private UUID id;
     @Column(name = "nome", nullable = false)
     @NotEmpty(message="Campo nome é obrigátorio")
